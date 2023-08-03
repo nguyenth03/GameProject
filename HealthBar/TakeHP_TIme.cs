@@ -20,5 +20,21 @@
     }
 
 
+//test
+
+private bool state = false;
+
+    private void OnCollisionEnter2D(){
+        //Sent when an incoming collider makes contact with this object's collider (2D physics only).
+        state = true;
+        for(int i = 0; i < 300; i++){
+            if(i % 2 == 0){
+                TakeDamege(20);
+            }
+        }
+    }
+
+
+
     
 
